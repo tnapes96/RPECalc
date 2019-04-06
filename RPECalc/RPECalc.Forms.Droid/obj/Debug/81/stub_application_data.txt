@@ -1,0 +1,2 @@
+android.app.Application
+RPECalc.Forms.Droid.RPECalc.Forms.Droid

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:RPEChartViewModel"
+                      xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:RPECalc.Core.ViewModels;assembly=RPECalc.Core"
+                      x:Class="RPECalc.Forms.UI.Pages.RPEChartView"
+                      Title="RPE Chart">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="HeaderLabelStyle" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+            <Style x:Key="LoadInfoLabelStyle" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="LightSkyBlue">
+
+                <StackLayout BackgroundColor="WhiteSmoke"
+                             Margin="10"
+                             Padding="10"
+                             >
+                    <!--1RM Display-->
+                    <Label Text="Last Set" 
+                           FontSize="32"
+                           HorizontalOptions="Center" 
+                           />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Weight Entry-->
+                       
+                        <Label Text="Weight" 
+                                Grid.Column="0"  
+                                Grid.Row="0"
+                                HorizontalOptions="Center" 
+                                Style="{StaticResource HeaderLabelStyle}" 
+                                />
+                        <Entry mvx:Bi.nd="Text LSWeight, Mode=TwoWay"
+                                Grid.Column="1"  
+                                Grid.Row="0"
+                                Keyboard="Numeric" 
+                                Placeholder="Input weight in lbs or kgs"
+                                />
+
+                        
+
+                        <!--Reps Picker-->
+                        <Label Text="Reps"
+                               Grid.Column="0"
+                               Grid.Row="1" 
+                               Style="{StaticResource HeaderLabelStyle}" 
+                               />
+                        <Picker Title="Select # of Reps"
+                                Grid.Column="1"
+                                Grid.Row="1" 
+                                SelectedItem="{mvx:MvxBind LSReps}"
+                                >
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:Int32}">
+                                    <x:Int32>1</x:Int32>
+                                    <x:Int32>2</x:Int32>
+                                    <x:Int32>3</x:Int32>
+                                    <x:Int32>4</x:Int32>
+                                    <x:Int32>5</x:Int32>
+                                    <x:Int32>6</x:Int32>
+                                    <x:Int32>7</x:Int32>
+                                    <x:Int32>8</x:Int32>
+                                    <x:Int32>9</x:Int32>
+                                    <x:Int32>10</x:Int32>
+                                    <x:Int32>11</x:Int32>
+                                    <x:Int32>12</x:Int32>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                        <!--RPE Picker-->
+                        <Label Text="RPE" 
+                               Grid.Column="0"
+                               Grid.Row="2" 
+                               Style="{StaticResource HeaderLabelStyle}" 
+                               />
+                        <Picker Title="Select RPE"
+                                SelectedItem="{mvx:MvxBind LSRpe}"
+                                Grid.Row="2" Grid.Column="1">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:Double}">
+                                    <x:Double>10</x:Double>
+                                    <x:Double>9.5</x:Double>
+                                    <x:Double>9</x:Double>
+                                    <x:Double>8.5</x:Double>
+                                    <x:Double>8</x:Double>
+                                    <x:Double>7.5</x:Double>
+                                    <x:Double>7</x:Double>
+                                    <x:Double>6.5</x:Double>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+
+
+                        <!--ORM-->
+                        <StackLayout Grid.Row="3" 
+                                     Grid.ColumnSpan="2" 
+                                     HorizontalOptions="Center"
+                                     Orientation="Horizontal"
+                                     >
+                            <Label Text="1RM" 
+                                   FontAttributes="Bold"
+                                   Style="{StaticResource HeaderLabelStyle}"
+                                   />
+                            <Label Text="{mvx:MvxBind Max}"
+                                   VerticalOptions="Center"
+                                   />
+                            
+                        </StackLayout>
+                        
+                        <!--Calculate Button-->
+                        <Button Text="Calculate"
+                                Grid.ColumnSpan="2"
+                                Grid.Row="4"
+                                Command="{mvx:MvxBind CalculateMaxCommand}"
+                                HorizontalOptions="Center"
+                                />
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="WhiteSmoke"
+                             Margin="10,0,10,10"
+                             Padding="10"
+                             >
+                    <Label Text="RPE Chart" 
+                           FontSize="32"
+                           HorizontalOptions="Center"
+                           />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Reps"
+                               Style="{StaticResource HeaderLabelStyle}"
+                               />
+                        <Picker Title="Reps"
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                SelectedItem="{mvx:MvxBind ChartReps}"
+                                >
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:Int32}">
+                                    <x:Int32>1</x:Int32>
+                                    <x:Int32>2</x:Int32>
+                                    <x:Int32>3</x:Int32>
+                                    <x:Int32>4</x:Int32>
+                                    <x:Int32>5</x:Int32>
+                                    <x:Int32>6</x:Int32>
+                                    <x:Int32>7</x:Int32>
+                                    <x:Int32>8</x:Int32>
+                                    <x:Int32>9</x:Int32>
+                                    <x:Int32>10</x:Int32>
+                                    <x:Int32>11</x:Int32>
+                                    <x:Int32>12</x:Int32>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="RPE"
+                               Grid.Column="0"
+                               FontAttributes="Bold"
+                               Style="{StaticResource HeaderLabelStyle}"
+                               />
+                        <Label Text="% of 1RM"
+                               Grid.Column="1"
+                               FontAttributes="Bold" 
+                               Style="{StaticResource HeaderLabelStyle}"
+                               />
+                        <Label Text="Weight"
+                               Grid.Column="2"
+                               FontAttributes="Bold" 
+                               Style="{StaticResource HeaderLabelStyle}" 
+                               />
+                    </Grid>
+                    <ListView BackgroundColor="WhiteSmoke"
+                              ItemsSource="{mvx:MvxBind RpeChartListPerRep}"
+                              HeightRequest="360"
+                              >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="{mvx:MvxBind Rpe}"
+                                               Grid.Column="0"
+                                               Style="{StaticResource LoadInfoLabelStyle}"
+                                               />
+                                        <Label Text="{mvx:MvxBind OneRMPercent}"
+                                               Grid.Column="1"
+                                               Style="{StaticResource LoadInfoLabelStyle}" 
+                                               />
+                                        <Label Text="{mvx:MvxBind Weight}" 
+                                               Grid.Column="2"
+                                               Style="{StaticResource LoadInfoLabelStyle}" 
+                                               />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</views:MvxContentPage>

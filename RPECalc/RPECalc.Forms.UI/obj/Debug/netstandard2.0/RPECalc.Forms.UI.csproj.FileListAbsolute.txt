@@ -1,0 +1,15 @@
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\bin\Debug\netstandard2.0\RPECalc.Forms.UI.deps.json
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\bin\Debug\netstandard2.0\RPECalc.Forms.UI.dll
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\bin\Debug\netstandard2.0\RPECalc.Forms.UI.pdb
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\bin\Debug\netstandard2.0\RPECalc.Core.dll
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\bin\Debug\netstandard2.0\RPECalc.Core.pdb
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.csprojAssemblyReference.cache
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\FormsApp.xaml.g.cs
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\Pages\RPEChartView.xaml.g.cs
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.csproj.CoreCompileInputs.cache
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.AssemblyInfoInputs.cache
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.AssemblyInfo.cs
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.csproj.CopyComplete
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.dll
+C:\Users\travis\source\repos\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.pdb
