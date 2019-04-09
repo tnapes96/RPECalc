@@ -1112,11 +1112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
+      "projectUniqueName": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
       "projectName": "RPECalc.Forms.Droid",
-      "projectPath": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
+      "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
       "packagesPath": "C:\\Users\\travis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Forms.Droid\\obj\\",
+      "outputPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1133,11 +1133,11 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj": {
-              "projectPath": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj"
+            "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj": {
+              "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj"
             },
-            "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj": {
-              "projectPath": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj"
+            "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj": {
+              "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj"
             }
           }
         }

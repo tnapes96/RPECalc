@@ -470,11 +470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj",
+      "projectUniqueName": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj",
       "projectName": "RPECalc.Core",
-      "projectPath": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj",
+      "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj",
       "packagesPath": "C:\\Users\\travis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\travis\\source\\repos\\RPECalc\\RPECalc.Core\\obj\\",
+      "outputPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
