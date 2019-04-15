@@ -79,9 +79,13 @@
     <Reference Include="MvvmCross.Forms, Version=6.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Forms.6.2.3\lib\xamarinios10\MvvmCross.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="OpenTK-1.0" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Essentials, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Essentials.1.1.0\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.3.6.0.293080\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>

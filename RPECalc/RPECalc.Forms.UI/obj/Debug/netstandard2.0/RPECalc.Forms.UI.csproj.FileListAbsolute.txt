@@ -24,7 +24,6 @@ C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug
 C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.csproj.CoreCompileInputs.cache
 C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.AssemblyInfoInputs.cache
 C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.AssemblyInfo.cs
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.csproj.CopyComplete
 C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.dll
 C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.UI\obj\Debug\netstandard2.0\RPECalc.Forms.UI.pdb
