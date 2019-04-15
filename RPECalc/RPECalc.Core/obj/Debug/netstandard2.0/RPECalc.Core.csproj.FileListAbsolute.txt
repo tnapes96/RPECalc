@@ -8,12 +8,3 @@ C:\Users\travis\source\repos\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\XamlC
 C:\Users\travis\source\repos\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.dll
 C:\Users\travis\source\repos\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.pdb
 C:\Users\travis\source\repos\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.csprojAssemblyReference.cache
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\bin\Debug\netstandard2.0\RPECalc.Core.deps.json
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\bin\Debug\netstandard2.0\RPECalc.Core.dll
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\bin\Debug\netstandard2.0\RPECalc.Core.pdb
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.csprojAssemblyReference.cache
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.csproj.CoreCompileInputs.cache
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.AssemblyInfoInputs.cache
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.AssemblyInfo.cs
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.dll
-C:\Users\travis\Source\Repos\tnapes96\RPECalc\RPECalc\RPECalc.Core\obj\Debug\netstandard2.0\RPECalc.Core.pdb

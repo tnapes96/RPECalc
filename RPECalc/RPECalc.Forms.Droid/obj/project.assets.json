@@ -1299,7 +1299,7 @@
       "MvvmCross.Forms >= 6.2.3",
       "RPECalc.Core >= 1.0.0",
       "RPECalc.Forms.UI >= 1.0.0",
-      "Xamarin.Android.Support.Design >= 27.0.2.1",
+      "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Forms >= 3.6.0.264807"
     ]
   },
@@ -1351,9 +1351,9 @@
             "target": "Package",
             "version": "[6.2.3, )"
           },
-          "Xamarin.Android.Support.Design": {
+          "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "[28.0.0.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
@@ -1368,6 +1368,76 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Core.UI 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Design 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Design 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v4 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v4 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.AppCompat 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.AppCompat 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.CardView 27.0.2.1 requires Xamarin.Android.Support.Annotations (= 27.0.2.1) but version Xamarin.Android.Support.Annotations 28.0.0.1 was resolved.",
       "libraryId": "Xamarin.Android.Support.Annotations",
       "targetGraphs": [
@@ -1375,10 +1445,111 @@
       ]
     },
     {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Version conflict detected for Xamarin.Android.Support.Compat. Install/reference Xamarin.Android.Support.Compat 28.0.0.1 directly to project RPECalc.Forms.Droid to resolve this issue. \r\n RPECalc.Forms.Droid -> RPECalc.Forms.UI -> Xamarin.Essentials 1.1.0 -> Xamarin.Android.Support.Compat (>= 28.0.0.1) \r\n RPECalc.Forms.Droid -> Xamarin.Android.Support.Design 27.0.2.1 -> Xamarin.Android.Support.Compat (= 27.0.2.1).",
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Fragment 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
       "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Fragment 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.RecyclerView 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Transition 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Transition 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Media.Compat 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Vector.Drawable 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.Palette 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.Palette 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 3.6.0.293080 to 3.6.0.264807. Reference the package directly from the project to select a different version. \r\n RPECalc.Forms.Droid -> RPECalc.Core -> Xamarin.Forms (>= 3.6.0.293080) \r\n RPECalc.Forms.Droid -> Xamarin.Forms (>= 3.6.0.264807)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 3.6.0.293080 to 3.6.0.264807. Reference the package directly from the project to select a different version. \r\n RPECalc.Forms.Droid -> RPECalc.Forms.UI -> Xamarin.Forms (>= 3.6.0.293080) \r\n RPECalc.Forms.Droid -> Xamarin.Forms (>= 3.6.0.264807)",
+      "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v8.1"
       ]
