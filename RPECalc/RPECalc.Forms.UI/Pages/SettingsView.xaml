@@ -13,15 +13,25 @@
             <TableRoot>
                 <TableSection>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
                             <Label Text="Weight Unit"
+                                   Grid.Column="0"
                                    HorizontalOptions="Start"
                                    VerticalOptions="Center"
                                    Margin="10"
                                    FontAttributes="Bold"
                                    />
                             <Picker Title="Unit"
-                                    HorizontalOptions="EndAndExpand"
+                                    Grid.Column="1"
+                                    HorizontalOptions="FillAndExpand"
                                     VerticalOptions="Center"
                                     Margin="10,0"
                                     SelectedItem="{mvx:MvxBind WeightUnit}">
@@ -32,18 +42,29 @@
                                     </x:Array>
                                 </Picker.ItemsSource>
                             </Picker>
-                        </StackLayout>
+
+                        </Grid>
                     </ViewCell>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
                             <Label Text="Round Weight To Nearest:"
+                                   Grid.Column="0"
                                    HorizontalOptions="Start"
                                    VerticalOptions="Center"
                                    Margin="10"
                                    FontAttributes="Bold"
                                    />
                             <Picker Title="Round"
-                                    HorizontalOptions="EndAndExpand"
+                                    Grid.Column="1"
+                                    HorizontalOptions="FillAndExpand"
                                     VerticalOptions="Center"
                                     Margin="10,0"
                                     SelectedItem="{mvx:MvxBind RoundTo}">
@@ -58,7 +79,8 @@
                                     </x:Array>
                                 </Picker.ItemsSource>
                             </Picker>
-                        </StackLayout>
+
+                        </Grid>
                     </ViewCell>
                 </TableSection>
             </TableRoot>

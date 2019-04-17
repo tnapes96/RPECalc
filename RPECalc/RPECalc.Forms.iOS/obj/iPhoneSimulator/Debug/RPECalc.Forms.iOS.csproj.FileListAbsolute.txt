@@ -70,3 +70,4 @@ C:\Users\travis\source\repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.iOS\obj\iPho
 C:\Users\travis\source\repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.iOS\obj\iPhoneSimulator\Debug\RPECalc.Forms.iOS.csproj.CopyComplete
 C:\Users\travis\source\repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.iOS\obj\iPhoneSimulator\Debug\Blank.exe
 C:\Users\travis\source\repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.iOS\obj\iPhoneSimulator\Debug\Blank.pdb
+C:\Users\travis\source\repos\tnapes96\RPECalc\RPECalc\RPECalc.Forms.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.dll.mdb

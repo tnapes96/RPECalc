@@ -2,37 +2,58 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Essentials;
 
 namespace RPECalc.Core.Services
 {
     public class RPECalculationService : IRPECalculationService
     {
         RpePercentageTable table;
-
+        double round;
         public RPECalculationService()
         {
             table = new RpePercentageTable();
+            
         }
 
         public double OneRepMax(double weight, int reps, double rpe)
         {
-            return Math.Round(weight / table.GetPercentage(reps, rpe), 2);
+            double orm = weight / table.GetPercentage(reps, rpe);
+            round = Preferences.Get("RoundTo", -1.0);
+            if (round != 0)
+                return round * (int)Math.Round(orm / round);
+            else
+                return Math.Round(orm, 2);
         }
 
         public List<LoadInfo> CalculateLoadForRep(double orm, int repLoad)
         {
             List<LoadInfo> loads = new List<LoadInfo>();
-
-            for(double rpe = 10; rpe >= 6.5; rpe -= .5)
+            round = Preferences.Get("RoundTo", -1.0);
+            for (double rpe = 10; rpe >= 6.5; rpe -= .5)
             {
                 double percentOfORM = table.GetPercentage(repLoad, rpe);
-                loads.Add(
-                    new LoadInfo
-                    {
-                        OneRMPercent = percentOfORM * 100,
-                        Rpe = rpe,
-                        Weight = Math.Round(orm * percentOfORM,2)
-                    });
+                if(round != 0)
+                {
+                    loads.Add(
+                        new LoadInfo
+                        {
+                            OneRMPercent = percentOfORM * 100,
+                            Rpe = rpe,
+                            Weight = round * (int)Math.Round((orm * percentOfORM) / round)
+                        });
+                }
+                else
+                {
+                    loads.Add(
+                        new LoadInfo
+                        {
+                            OneRMPercent = percentOfORM * 100,
+                            Rpe = rpe,
+                            Weight = Math.Round(orm * percentOfORM,2)
+                        });
+
+                }
             }
             return loads;
 

@@ -24,7 +24,7 @@ namespace RPECalc.Core.ViewModels
 
             CalculateMaxCommand = new MvxCommand(CalculateMax);
 
-            ShowSettingsViewModelCommand = new MvxAsyncCommand(ShowSettingsViewModel);
+            ShowSettingsViewModelCommand = new MvxCommand(ShowSettingsViewModel);
         }
 
         public override async Task Initialize()
@@ -99,6 +99,11 @@ namespace RPECalc.Core.ViewModels
             get => Preferences.Get(nameof(WeightUnit), "ERR");
         }
 
+        public double RoundTo
+        {
+            get => Preferences.Get(nameof(RoundTo), -1);
+        }
+
         private MvxObservableCollection<LoadInfo> _rpeChartListPerRep;
         public MvxObservableCollection<LoadInfo> RpeChartListPerRep
         {
@@ -111,11 +116,11 @@ namespace RPECalc.Core.ViewModels
 
         // Commands
         public IMvxCommand CalculateMaxCommand { get; private set; } 
-        public IMvxAsyncCommand ShowSettingsViewModelCommand { get; private set; }
+        public IMvxCommand ShowSettingsViewModelCommand { get; private set; }
 
-        private async Task ShowSettingsViewModel()
+        private void ShowSettingsViewModel()
         {
-            await _navigationService.Navigate<SettingsViewModel>();
+            _navigationService.Navigate<SettingsViewModel>();
         }
 
         // Methods
@@ -134,6 +139,7 @@ namespace RPECalc.Core.ViewModels
         public override void ViewAppearing()
         {
             RaisePropertyChanged(() => WeightUnit);
+            CalculateMax();
         }
     }
 }
