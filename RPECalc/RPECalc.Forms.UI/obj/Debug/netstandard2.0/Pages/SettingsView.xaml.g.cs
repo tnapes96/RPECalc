@@ -14,7 +14,7 @@ namespace RPECalc.Forms.UI.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\SettingsView.xaml")]
-    public partial class SettingsView : global::MvvmCross.Forms.Views.MvxContentPage {
+    public partial class SettingsView : global::MvvmCross.Forms.Views.MvxContentPage<global::RPECalc.Core.ViewModels.SettingsViewModel> {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

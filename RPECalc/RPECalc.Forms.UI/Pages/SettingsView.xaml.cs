@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MvvmCross.Forms.Views;
+using RPECalc.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +12,9 @@ using Xamarin.Forms.Xaml;
 namespace RPECalc.Forms.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SettingsView : ContentPage
+    public partial class SettingsView : MvxContentPage<SettingsViewModel>
     {
-        public SettingsView()
+        public SettingsView ()
         {
             InitializeComponent();
         }

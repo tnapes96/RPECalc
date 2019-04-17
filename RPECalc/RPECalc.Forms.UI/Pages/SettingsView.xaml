@@ -1,14 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<views:MvxContentPage x:TypeArgument="viewmModels:SettingsViewModel"
+<views:MvxContentPage x:TypeArguments="viewModels:SettingsViewModel"
                       xmlns="http://xamarin.com/schemas/2014/forms"
                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                       xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:RPECalc.Core.ViewModels;assembly=RPECalc.Core"
-                      x:Class="RPECalc.Forms.UI.Pages.SettingsView">
+                      x:Class="RPECalc.Forms.UI.Pages.SettingsView"
+                      Title="Settings">
     <ContentPage.Content>
-        <TableView>
-            
+        
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Weight Unit"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="Center"
+                                   Margin="10"
+                                   FontAttributes="Bold"
+                                   />
+                            <Picker Title="Unit"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center"
+                                    Margin="10,0"
+                                    SelectedItem="{mvx:MvxBind WeightUnit}">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>lbs</x:String>
+                                        <x:String>kgs</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Round Weight To Nearest:"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="Center"
+                                   Margin="10"
+                                   FontAttributes="Bold"
+                                   />
+                            <Picker Title="Round"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center"
+                                    Margin="10,0"
+                                    SelectedItem="{mvx:MvxBind RoundTo}">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Double}">
+                                        <x:Double>5</x:Double>
+                                        <x:Double>2.5</x:Double>
+                                        <x:Double>2</x:Double>
+                                        <x:Double>1.25</x:Double>
+                                        <x:Double>1</x:Double>
+                                        <x:Double>0</x:Double>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
         </TableView>
+        
     </ContentPage.Content>
 </views:MvxContentPage>

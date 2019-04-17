@@ -7,6 +7,10 @@
                       xmlns:viewModels="clr-namespace:RPECalc.Core.ViewModels;assembly=RPECalc.Core"
                       x:Class="RPECalc.Forms.UI.Pages.RPEChartView"
                       Title="RPE Chart">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Settings" Command="{mvx:MvxBind ShowSettingsViewModelCommand}" />
+    </ContentPage.ToolbarItems>
     
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -61,10 +65,8 @@
                                 Grid.Column="1"  
                                 Grid.Row="0"
                                 Keyboard="Numeric" 
-                                Placeholder="Input weight in lbs or kgs"
+                                Placeholder="{mvx:MvxBind WeightUnit, StringFormat='Input weight in {0}'}"
                                 />
-
-                        
 
                         <!--Reps Picker-->
                         <Label Text="Reps"
@@ -131,6 +133,9 @@
                             <Label Text="{mvx:MvxBind Max}"
                                    VerticalOptions="Center"
                                    />
+                            <Label Text="{mvx:MvxBind WeightUnit}"
+                                   VerticalOptions="Center"
+                                   />
                             
                         </StackLayout>
                         
@@ -152,13 +157,12 @@
                            FontSize="32"
                            HorizontalOptions="Center"
                            />
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label Text="Reps"
                                Style="{StaticResource HeaderLabelStyle}"
                                />
                         <Picker Title="Reps"
-                                Grid.Column="1"
-                                Grid.Row="1"
+     
                                 SelectedItem="{mvx:MvxBind ChartReps}"
                                 >
                             <Picker.ItemsSource>
@@ -199,7 +203,7 @@
                                FontAttributes="Bold" 
                                Style="{StaticResource HeaderLabelStyle}"
                                />
-                        <Label Text="Weight"
+                        <Label Text="{Binding WeightUnit, StringFormat='Weight ({0})'}"
                                Grid.Column="2"
                                FontAttributes="Bold" 
                                Style="{StaticResource HeaderLabelStyle}" 

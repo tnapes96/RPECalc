@@ -12,7 +12,7 @@ using Android.Content.PM;
 namespace RPECalc.Forms.Droid
 {
     [Activity(
-        Label = "TipCalc.Forms.Droid",
+        Label = "RPECalc.Forms.Droid",
         Icon = "@drawable/icon",
         Theme = "@style/MyTheme",
         MainLauncher = true,

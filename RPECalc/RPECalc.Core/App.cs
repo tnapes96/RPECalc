@@ -5,6 +5,7 @@ using RPECalc.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Essentials;
 
 namespace RPECalc.Core
 {
@@ -14,7 +15,15 @@ namespace RPECalc.Core
         {
             Mvx.IoCProvider.RegisterType<IRPECalculationService, RPECalculationService>();
 
-            RegisterAppStart<RPEChartViewModel>();
+            bool firstTime = Preferences.Get("FirstTime", true);
+            if (firstTime)
+            {
+                Preferences.Set("WeightUnit", "lbs");
+                Preferences.Set("RoundTo", 5.0);
+                Preferences.Set("FirstTime", false);
+            }
+
+            RegisterAppStart<RPEChartViewModel>(); 
         }
     }
 }
