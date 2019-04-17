@@ -477,7 +477,7 @@
           "lib/monoandroid81/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.264807": {
+      "Xamarin.Forms/3.6.0.293080": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.Design": "27.0.2",
@@ -1117,10 +1117,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/3.6.0.264807": {
-      "sha512": "PbnXpStyxNYJzPrXXMW17F4YeMsFAs6YT9LL2vxObDWCGtaKkLia4UyBPF3Qbhy+lQPeap/ijV1Rlvasp4DFiA==",
+    "Xamarin.Forms/3.6.0.293080": {
+      "sha512": "5o6pS3kbFwWDiTpywz0UasLwn9Ay5/1eGH8JWXBV0N2lDkZauOgTZaMIE/Rdjz2bLhMturwzI1/DFuNxdSidFw==",
       "type": "package",
-      "path": "xamarin.forms/3.6.0.264807",
+      "path": "xamarin.forms/3.6.0.293080",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1278,7 +1278,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.3.6.0.293080.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1300,7 +1300,7 @@
       "RPECalc.Core >= 1.0.0",
       "RPECalc.Forms.UI >= 1.0.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
-      "Xamarin.Forms >= 3.6.0.264807"
+      "Xamarin.Forms >= 3.6.0.293080"
     ]
   },
   "packageFolders": {
@@ -1357,7 +1357,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.6.0.264807, )"
+            "version": "[3.6.0.293080, )"
           }
         }
       }
@@ -1530,26 +1530,6 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.Palette 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
       "libraryId": "Xamarin.Android.Support.Core.Utils",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 3.6.0.293080 to 3.6.0.264807. Reference the package directly from the project to select a different version. \r\n RPECalc.Forms.Droid -> RPECalc.Core -> Xamarin.Forms (>= 3.6.0.293080) \r\n RPECalc.Forms.Droid -> Xamarin.Forms (>= 3.6.0.264807)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 3.6.0.293080 to 3.6.0.264807. Reference the package directly from the project to select a different version. \r\n RPECalc.Forms.Droid -> RPECalc.Forms.UI -> Xamarin.Forms (>= 3.6.0.293080) \r\n RPECalc.Forms.Droid -> Xamarin.Forms (>= 3.6.0.264807)",
-      "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v8.1"
       ]

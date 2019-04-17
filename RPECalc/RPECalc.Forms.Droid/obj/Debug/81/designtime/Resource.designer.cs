@@ -3970,6 +3970,7 @@ namespace RPECalc.Forms.Droid
 			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Title = global::RPECalc.Forms.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::RPECalc.Forms.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::RPECalc.Forms.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::RPECalc.Forms.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::RPECalc.Forms.Droid.Resource.Styleable.FontFamily;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::RPECalc.Forms.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::RPECalc.Forms.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
@@ -13426,6 +13427,9 @@ namespace RPECalc.Forms.Droid
 			
 			// aapt resource value: 0x7F100002
 			public const int Empty = 2131755010;
+			
+			// aapt resource value: 0x7F100003
+			public const int xamarin_essentials_fileprovider_file_paths = 2131755011;
 			
 			static Xml()
 			{
