@@ -1,4 +1,5 @@
 ﻿using MvvmCross.Commands;
+using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 using RPECalc.Core.Models;
 using RPECalc.Core.Services;
@@ -7,17 +8,23 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace RPECalc.Core.ViewModels
 {
     public class RPEChartViewModel : MvxViewModel
     {
         readonly IRPECalculationService _rpeCalculationService;
+        readonly IMvxNavigationService _navigationService;
 
-        public RPEChartViewModel(IRPECalculationService rpeCalculation)
+        public RPEChartViewModel(IRPECalculationService rpeCalculation, IMvxNavigationService navigationService)
         {
             _rpeCalculationService = rpeCalculation;
+            _navigationService = navigationService;
+
             CalculateMaxCommand = new MvxCommand(CalculateMax);
+
+            ShowSettingsViewModelCommand = new MvxCommand(ShowSettingsViewModel);
         }
 
         public override async Task Initialize()
@@ -32,6 +39,8 @@ namespace RPECalc.Core.ViewModels
             _chartReps = 1;
         }
 
+        
+
         //ls = last set
         private double _lsrpe;
         public double LSRpe
@@ -40,7 +49,6 @@ namespace RPECalc.Core.ViewModels
             set
             {
                 SetProperty(ref _lsrpe, value);
-                //CalculateMax();
             }
         }
 
@@ -51,7 +59,6 @@ namespace RPECalc.Core.ViewModels
             set
             {
                 SetProperty(ref _lsreps, value);
-                //CalculateMax();
             }
         }
 
@@ -62,7 +69,6 @@ namespace RPECalc.Core.ViewModels
             set
             {
                 SetProperty(ref _lsweight, value);
-                //CalculateMax();
             }
         }
 
@@ -88,6 +94,16 @@ namespace RPECalc.Core.ViewModels
             }
         }
 
+        public string WeightUnit
+        {
+            get => Preferences.Get(nameof(WeightUnit), "ERR");
+        }
+
+        public double RoundTo
+        {
+            get => Preferences.Get(nameof(RoundTo), -1);
+        }
+
         private MvxObservableCollection<LoadInfo> _rpeChartListPerRep;
         public MvxObservableCollection<LoadInfo> RpeChartListPerRep
         {
@@ -98,7 +114,14 @@ namespace RPECalc.Core.ViewModels
             }
         }
 
+        // Commands
         public IMvxCommand CalculateMaxCommand { get; private set; } 
+        public IMvxCommand ShowSettingsViewModelCommand { get; private set; }
+
+        private void ShowSettingsViewModel()
+        {
+            _navigationService.Navigate<SettingsViewModel>();
+        }
 
         // Methods
         private void CalculateMax()
@@ -110,6 +133,13 @@ namespace RPECalc.Core.ViewModels
         {
             MvxObservableCollection<LoadInfo> temp = new MvxObservableCollection<LoadInfo>(_rpeCalculationService.CalculateLoadForRep(Max, ChartReps));
             RpeChartListPerRep = temp;
+        }
+
+
+        public override void ViewAppearing()
+        {
+            RaisePropertyChanged(() => WeightUnit);
+            CalculateMax();
         }
     }
 }

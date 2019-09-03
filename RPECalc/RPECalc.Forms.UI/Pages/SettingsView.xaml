@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:SettingsViewModel"
+                      xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:RPECalc.Core.ViewModels;assembly=RPECalc.Core"
+                      x:Class="RPECalc.Forms.UI.Pages.SettingsView"
+                      Title="Settings">
+    <ContentPage.Content>
+        
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Weight Unit"
+                                   Grid.Column="0"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="Center"
+                                   Margin="10"
+                                   FontAttributes="Bold"
+                                   />
+                            <Picker Title="Unit"
+                                    Grid.Column="1"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="Center"
+                                    Margin="10,0"
+                                    SelectedItem="{mvx:MvxBind WeightUnit}">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>lbs</x:String>
+                                        <x:String>kgs</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                        </Grid>
+                    </ViewCell>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Round Weight To Nearest:"
+                                   Grid.Column="0"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="Center"
+                                   Margin="10"
+                                   FontAttributes="Bold"
+                                   />
+                            <Picker Title="Round"
+                                    Grid.Column="1"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="Center"
+                                    Margin="10,0"
+                                    SelectedItem="{mvx:MvxBind RoundTo}">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Double}">
+                                        <x:Double>5</x:Double>
+                                        <x:Double>2.5</x:Double>
+                                        <x:Double>2</x:Double>
+                                        <x:Double>1.25</x:Double>
+                                        <x:Double>1</x:Double>
+                                        <x:Double>0</x:Double>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        
+    </ContentPage.Content>
+</views:MvxContentPage>

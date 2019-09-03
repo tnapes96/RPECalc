@@ -477,7 +477,7 @@
           "lib/monoandroid81/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.264807": {
+      "Xamarin.Forms/3.6.0.293080": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.Design": "27.0.2",
@@ -1117,10 +1117,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/3.6.0.264807": {
-      "sha512": "PbnXpStyxNYJzPrXXMW17F4YeMsFAs6YT9LL2vxObDWCGtaKkLia4UyBPF3Qbhy+lQPeap/ijV1Rlvasp4DFiA==",
+    "Xamarin.Forms/3.6.0.293080": {
+      "sha512": "5o6pS3kbFwWDiTpywz0UasLwn9Ay5/1eGH8JWXBV0N2lDkZauOgTZaMIE/Rdjz2bLhMturwzI1/DFuNxdSidFw==",
       "type": "package",
-      "path": "xamarin.forms/3.6.0.264807",
+      "path": "xamarin.forms/3.6.0.293080",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1278,7 +1278,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.3.6.0.293080.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1299,8 +1299,8 @@
       "MvvmCross.Forms >= 6.2.3",
       "RPECalc.Core >= 1.0.0",
       "RPECalc.Forms.UI >= 1.0.0",
-      "Xamarin.Android.Support.Design >= 27.0.2.1",
-      "Xamarin.Forms >= 3.6.0.264807"
+      "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
+      "Xamarin.Forms >= 3.6.0.293080"
     ]
   },
   "packageFolders": {
@@ -1309,11 +1309,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
+      "projectUniqueName": "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
       "projectName": "RPECalc.Forms.Droid",
-      "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
+      "projectPath": "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\RPECalc.Forms.Droid.csproj",
       "packagesPath": "C:\\Users\\travis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\obj\\",
+      "outputPath": "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.Droid\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1330,11 +1330,11 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj": {
-              "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj"
+            "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj": {
+              "projectPath": "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Core\\RPECalc.Core.csproj"
             },
-            "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj": {
-              "projectPath": "C:\\Users\\travis\\Source\\Repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj"
+            "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj": {
+              "projectPath": "C:\\Users\\travis\\source\\repos\\tnapes96\\RPECalc\\RPECalc\\RPECalc.Forms.UI\\RPECalc.Forms.UI.csproj"
             }
           }
         }
@@ -1351,19 +1351,89 @@
             "target": "Package",
             "version": "[6.2.3, )"
           },
-          "Xamarin.Android.Support.Design": {
+          "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "[28.0.0.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.6.0.264807, )"
+            "version": "[3.6.0.293080, )"
           }
         }
       }
     }
   },
   "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Core.UI 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Design 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Design 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v4 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v4 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.AppCompat 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.AppCompat 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
     {
       "code": "NU1608",
       "level": "Warning",
@@ -1375,10 +1445,91 @@
       ]
     },
     {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Version conflict detected for Xamarin.Android.Support.Compat. Install/reference Xamarin.Android.Support.Compat 28.0.0.1 directly to project RPECalc.Forms.Droid to resolve this issue. \r\n RPECalc.Forms.Droid -> RPECalc.Forms.UI -> Xamarin.Essentials 1.1.0 -> Xamarin.Android.Support.Compat (>= 28.0.0.1) \r\n RPECalc.Forms.Droid -> Xamarin.Android.Support.Design 27.0.2.1 -> Xamarin.Android.Support.Compat (= 27.0.2.1).",
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Fragment 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
       "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Fragment 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.RecyclerView 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Transition 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Transition 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Media.Compat 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.Vector.Drawable 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.Palette 27.0.2.1 requires Xamarin.Android.Support.Compat (= 27.0.2.1) but version Xamarin.Android.Support.Compat 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Compat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.Android.Support.v7.Palette 27.0.2.1 requires Xamarin.Android.Support.Core.Utils (= 27.0.2.1) but version Xamarin.Android.Support.Core.Utils 28.0.0.1 was resolved.",
+      "libraryId": "Xamarin.Android.Support.Core.Utils",
       "targetGraphs": [
         "MonoAndroid,Version=v8.1"
       ]
